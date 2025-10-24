@@ -81,6 +81,7 @@ async def fetch_and_parse(
                     print(
                         f"PRICE UPDATE - {title}\n OLD PRICE: {int_to_price(property_price)} NEW PRICE: {formatted_price}"
                     )
+                    return
 
             print(f"Price for {title}: {property_price}. URL: {url}")
         except TimeoutError:
