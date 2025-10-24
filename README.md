@@ -1,21 +1,23 @@
-Real Estate Listing Short-Term-Rental Price Updater & Availabilty Checker
+# Real Estate Listing Short-Term-Rental Price Updater & Availabilty Checker
 
 This project automates checking and updating property prices and availability from Realtracs and Airbnb links in a Google Sheet. It uses Playwright for web scraping, asyncio for concurrency, and gspread for batch updates — allowing efficient, large-scale price monitoring with minimal API calls.
 
-Features
+## Features
+
 • Automated Price Checking — Scrapes live Realtracs and Airbnb listings to verify and update prices and availability.
 • Concurrency — Uses async tasks and semaphores to process 5 URLs concurrently.
 • In-Memory Updates — Modifies data locally before batch updating to reduce Google Sheets API calls from hundreds to just 3.
 • Automatic Formatting — Highlights unavailable listings (e.g., expired, cancelled, sold, expired URL for Realtracs, and 404 error from Airbnb).
 
-Tech Stack & Tools
+## Tech Stack & Tools
+
 • Python
 • Playwright
 • gspread
 • asyncio
 • re (regex) for price parsing
 
-Example Output
+### Example Output
 
 ```Python
 PRICE UPDATE - 293 Plus Park Blvd #113
